@@ -6,7 +6,7 @@ spring:
       prefix: /
       suffix: .html
   datasource:
-    url: jdbc:mysql://localhost:3306/20221127_november_boat_db02_admin
+    url: jdbc:mysql://localhost:3306/20221127_november_boat_db03_ship
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -18,4 +18,9 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 server:
-  port: 8812
+  port: 8813
+
+
+group6:
+  shipType:
+    shipTypePageSize: 10

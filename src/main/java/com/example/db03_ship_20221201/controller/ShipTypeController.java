@@ -3,6 +3,7 @@ package com.example.db03_ship_20221201.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.db03_ship_20221201.entity.ShipType;
+import com.example.db03_ship_20221201.searchBody.ShipTypeSearchBody;
 import com.example.db03_ship_20221201.service.IShipTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -69,6 +70,15 @@ public class ShipTypeController {
         return page;
     }
 
-    
+//    弄post方式传递search参数
+    @PostMapping ("/search2")
+    @CrossOrigin
+    public Page<ShipType> search2(
+            @RequestBody
+            ShipTypeSearchBody shipTypeSearchBody){
+        Page<ShipType> page = iShipTypeService.search2(shipTypeSearchBody);
+        return page;
+    }
+
 }
 
