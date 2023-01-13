@@ -2,9 +2,12 @@ package com.example.db03_ship_20221201.service.impl;
 
 import com.example.db03_ship_20221201.entity.Ship;
 import com.example.db03_ship_20221201.mapper.ShipMapper;
+import com.example.db03_ship_20221201.searchBody.ShipSearchBody;
 import com.example.db03_ship_20221201.service.IShipService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -17,4 +20,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class ShipServiceImpl extends ServiceImpl<ShipMapper, Ship> implements IShipService {
 
+    @Override
+    public List<Ship> select(ShipSearchBody shipSearchBody) {
+        return null;
+    }
+
+    @Override
+    public Integer counts(ShipSearchBody shipSearchBody) {
+        return null;
+    }
 }
