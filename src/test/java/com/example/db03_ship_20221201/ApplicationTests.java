@@ -96,4 +96,16 @@ class ApplicationTests {
         System.out.println(shipTypePage);
 
     }
+
+    @Test
+//    为了试试commit
+    public void tmp20230114(){
+
+    }
+
+    @Test
+    public void tmp20230114_try_sleep(){
+
+
+    }
 }

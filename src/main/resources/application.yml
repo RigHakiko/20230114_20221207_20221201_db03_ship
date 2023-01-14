@@ -6,9 +6,9 @@ spring:
       prefix: /
       suffix: .html
   datasource:
-    url: jdbc:mysql://localhost:3306/20221127_november_boat_db03_ship
-    username: root
-    password: root
+    url: jdbc:mysql://139.162.99.98:32651/20230114_macbook_boat_db03_ship
+    username: 20230114_root
+    password: 3A$LK@Pe5@jkTm^HFtR
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 
@@ -18,7 +18,7 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 server:
-  port: 8813
+  port: 8913
 
 
 group6:
